@@ -1,0 +1,55 @@
+body {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    }
+
+#splash, #about, #location {
+    margin: auto;
+    height: 100vh;
+    width: 80vh;
+}
+
+@keyframes inOut {
+    0% {transform: translateY(-5px);
+    }
+    50% {transform: translateY(0px);
+    }
+    100% {transform: translateY(5px);
+    }
+
+}
+
+
+/*.border { animation: round 3s infinite;
+    border-left: 2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;}*/
+
+a {position: relative;
+bottom: 0%;}
+
+.circle:hover {background-color: green;
+}
+
+.circle {
+    position: absolute;
+    top: 700px;
+    left: 300px;
+    font-size: 5vh;
+    font-weight: 900;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    transition: background-color .5s ease-in-out;
+    background-color: #5ea3ca;
+    border-radius: 50%;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.animate {
+    animation: inOut .7s infinite;
+}
+address {margin-top: 20%;}
